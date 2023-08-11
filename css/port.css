@@ -59,7 +59,12 @@
   margin: 0 25px;
   background-color: pink;
 }
-
+.site_preview > div .item img {
+  display: block;
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+}
 /* content 부분 디자인 */
 .content {
   margin-top: 40px;
