@@ -1,0 +1,156 @@
+/* header 선택 */
+.header .gnb li:nth-child(2) a {
+  color: var(--pink);
+}
+
+.port {
+  margin-top: 130px;
+}
+.port h1 {
+  font-size: 26px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: var(--blod);
+  margin-left: 30px;
+  width: fit-content;
+  position: relative;
+  z-index: -1;
+}
+.port h1::after {
+  content: "";
+  width: 100%;
+  height: 21px;
+  background-color: var(--pink);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* made_site 슬라이드 */
+.made_site {
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.made_site_slider {
+  width: 650px;
+  height: 300px;
+}
+.made_site_slider div img {
+  width: 650px;
+  height: 300px;
+  display: block;
+}
+
+/* 사이트 프리뷰 */
+.site_preview {
+  width: 100%;
+  height: 310px;
+  margin-top: 70px;
+}
+
+.site_preview > div .item {
+  float: left;
+  width: 310px;
+  height: 310px;
+  margin: 0 25px;
+  background-color: pink;
+}
+
+/* content 부분 디자인 */
+.content {
+  margin-top: 40px;
+}
+.content_slide > div {
+  margin: 0 30px;
+  width: 1020px;
+  border-bottom: 2px solid #959595;
+}
+.content_slide .site {
+  height: 135px;
+}
+.content_slide .site h2 {
+  font-size: 24px;
+  font-weight: var(--blod);
+  float: left;
+  text-align: left;
+  width: 320px;
+  height: 135px;
+  line-height: 135px;
+}
+.content_slide .site a {
+  display: block;
+  height: 135px;
+  line-height: 135px;
+}
+.content_slide .site a:hover {
+  color: var(--emphasis);
+}
+
+/* 선정이유 */
+.content_slide .reason {
+  height: fit-content;
+  padding: 50px 0;
+}
+.content_slide .reason .rea {
+  float: left;
+}
+.content_slide .reason .rea h2 {
+  font-size: 24px;
+  font-weight: var(--blod);
+  text-align: left;
+  width: 320px;
+  margin-bottom: 20px;
+}
+.content_slide .reason .rea p {
+  font-size: 24px;
+  font-weight: var(--blod);
+  text-align: center;
+  width: 320px;
+  color: #f3de1c;
+  /* 각자 색상바꿔주기 */
+  text-decoration: underline;
+}
+.content_slide .reason .son {
+  font-size: 18px;
+  line-height: 165%;
+  margin-right: 30px;
+}
+
+/* 배운점 */
+.content_slide .study {
+  border: none;
+  height: fit-content;
+  padding: 50px 0;
+}
+.content_slide .study h2 {
+  float: left;
+  font-size: 24px;
+  font-weight: var(--blod);
+  text-align: left;
+  width: 320px;
+  height: 300px;
+  line-height: 300px;
+  /* 각자 옆 div 따라 높이 변경 */
+}
+.content_slide .study div {
+  margin-right: 30px;
+  height: 300px;
+}
+
+/* 올리브영 */
+.content_slide.oliveyoung .reason .rea {
+  height: 180px;
+}
+.content_slide.goverment24 .reason .rea {
+  height: 180px;
+}
+.content_slide.oliveyoung .reason .rea p {
+  color: #7fd13e;
+}
+.content_slide.goverment24 .reason .rea p {
+  color: #3252a4;
+}

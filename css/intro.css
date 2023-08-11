@@ -1,0 +1,277 @@
+/* header 선택 */
+.header .gnb li:first-child a {
+  color: var(--pink);
+}
+
+/* fix된 menu */
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 200px;
+  transform: translateY(-50%);
+}
+.menu ul li {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 60px;
+  margin-bottom: 45px;
+}
+.menu ul li:hover {
+  color: var(--emphasis);
+}
+.menu ul li.on {
+  transform: scale(120%);
+  color: black;
+}
+.menu ul li:first-child {
+  background-image: url(../images/red.png);
+}
+.menu ul li:nth-child(2) {
+  background-image: url(../images/blue.png);
+}
+.menu ul li:last-child {
+  background-image: url(../images/yellow.png);
+}
+.menu ul li a {
+  font-family: "Gowun Dodum", sans-serif;
+  font-size: 20px;
+  display: block;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+  padding-left: 50px;
+}
+
+/* 자기소개, 경험/활동, 꿈 계기 공통 */
+.intro-content {
+  margin-top: 130px;
+  width: 1080px;
+  height: fit-content;
+}
+.intro-content h1 {
+  font-size: 26px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: var(--blod);
+  margin-left: 30px;
+  width: fit-content;
+  position: relative;
+  z-index: -1;
+}
+.intro-content h1::after {
+  content: "";
+  width: 100%;
+  height: 21px;
+  background-color: var(--pink);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.intro-content .main {
+  width: fit-content;
+  height: fit-content;
+  margin-right: 83px;
+  float: right;
+  margin-top: 45px;
+}
+/*  */
+.intro-content.first .main {
+  background-image: url(../images/memobg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 634px;
+  height: 821px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+.intro-content.first .main h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 162px;
+}
+.intro-content.first .main h2 span {
+  color: var(--emphasis);
+}
+
+.intro-content.first .main .myself {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  width: 480px;
+  height: 231px;
+  margin: 0 auto;
+}
+.intro-content.first .main .myself .photo {
+  background-image: url(../images/post_blue.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 225px;
+  height: 231px;
+  position: relative;
+}
+.intro-content.first .main .myself .photo::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+  border-radius: 100px;
+  position: absolute;
+  top: 45px;
+  left: 35px;
+  outline: 1px double darksalmon;
+}
+.intro-content.first .main .myself .photo::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: plum;
+  border-radius: 100px;
+  position: absolute;
+  bottom: 25px;
+  right: 55px;
+  outline: 1px dashed #888;
+}
+.intro-content.first .main .myself .photo img {
+  display: block;
+  width: 97px;
+  height: 124px;
+  border-radius: 45px;
+  object-fit: cover;
+  position: absolute;
+  top: 30%;
+  left: 27%;
+  z-index: 1;
+}
+
+.intro-content.first .main .myself .intro p {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.intro-content.first .main .myself .intro p span {
+  font-size: 14px;
+  color: var(--font1);
+}
+
+.intro-content.first .main .personality {
+  width: 470px;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.intro-content.first .main .personality h3 {
+  margin-bottom: 5px;
+}
+.intro-content.first .main .personality p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.intro-content.first .main .sign {
+  background-image: url(../images/memo_under.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 470px;
+  height: 153px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 0 65px;
+  padding-top: 17px;
+
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.intro-content.first .main .sign img {
+  display: block;
+  width: 147px;
+  height: 88px;
+}
+
+/* 경험/활동 */
+
+/* 경험/활동/교육 table */
+.intro-content.second .main h2 {
+  font-size: 26px;
+  font-weight: var(--blod);
+  margin-bottom: 15px;
+}
+.intro-content.second .main .plot1 {
+  width: 800px;
+  height: fit-content;
+  text-align: center;
+  border-top: 1px solid #000;
+  border-collapse: collapse;
+  margin-bottom: 85px;
+}
+.intro-content.second .main .plot1 th,
+td {
+  border-bottom: 1px solid #000;
+  padding: 16px 10px;
+  margin: 0 auto;
+}
+
+.intro-content.second .main .plot1 th {
+  font-weight: var(--blod);
+  font-size: 18px;
+}
+
+.intro-content.second .main .plot1 .date {
+  width: 166px;
+  background-color: #eee;
+}
+.intro-content.second .main .plot1 .division {
+  width: 121px;
+}
+.intro-content.second .main .plot1 .place {
+  width: 163px;
+  background-color: #eee;
+}
+.intro-content.second .main .plot1 td.content {
+  width: 270px;
+  font-size: 14px;
+}
+
+/* 자격증/어학/수상내역 */
+.intro-content.second .main .plot2 {
+  width: 800px;
+  height: fit-content;
+  text-align: center;
+  border-top: 1px solid #000;
+  border-collapse: collapse;
+  margin-bottom: 150px;
+}
+.intro-content.second .main .plot2 th,
+td {
+  border-bottom: 1px solid #000;
+  padding: 16px 10px;
+  margin: 0 auto;
+}
+
+.intro-content.second .main .plot2 th {
+  font-weight: var(--blod);
+  font-size: 18px;
+}
+
+.intro-content.second .main .plot2 .date {
+  width: 142px;
+  background-color: #eee;
+}
+.intro-content.second .main .plot2 .division {
+  width: 125px;
+}
+.intro-content.second .main .plot2 .place {
+  width: 291px;
+  background-color: #eee;
+}
+.intro-content.second .main .plot2 td.content {
+  width: 162px;
+  font-size: 14px;
+}
