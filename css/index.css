@@ -1,0 +1,65 @@
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg-text .logo {
+  width: 946px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+.bg-text .logo img {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+
+  animation-name: logo;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes logo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bg-text ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  gap: 100px;
+}
+.bg-text ul li a {
+  display: block;
+  width: fit-content;
+  padding: 30px 50px;
+  border: 5px dashed var(--font);
+  border-radius: 100px;
+}
+.bg-text ul li a:hover {
+  color: var(--emphasis);
+  border: 5px dashed var(--emphasis);
+  border-radius: 100px;
+}
