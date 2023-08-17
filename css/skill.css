@@ -11,7 +11,7 @@
 }
 .skills h1 {
   font-size: 26px;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Gowun Dodum", sans-serif;
   font-weight: var(--blod);
   margin-left: 30px;
   width: fit-content;
@@ -28,6 +28,8 @@
   bottom: 0;
   left: 0;
   z-index: -1;
+  border-radius: 3px;
+  transform: skewX(10deg);
 }
 /*  */
 .skills .skillbox {
