@@ -139,16 +139,51 @@
   font-weight: var(--blod);
   text-align: left;
   width: 320px;
-  height: 300px;
-  line-height: 300px;
+
   /* 각자 옆 div 따라 높이 변경 */
 }
+
+.content_slide.kakao .study h2 {
+  height: 400px;
+  line-height: 400px;
+}
+.content_slide.oliveyoung .study h2 {
+  height: 250px;
+  line-height: 250px;
+}
+.content_slide.goverment24 .study h2 {
+  height: 130px;
+  line-height: 130px;
+}
+
 .content_slide .study div {
   margin-right: 30px;
-  height: 300px;
+  height: 400px;
+  font-size: 18px;
+}
+
+.content_slide .study div p {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.content_slide.oliveyoung .study div p::before {
+  margin-right: 10px;
+  content: "🟢";
+}
+.content_slide.kakao .study div p::before {
+  content: "🟡";
+  margin-right: 10px;
+}
+.content_slide.goverment24 .study div p::before {
+  content: "🔵";
+  margin-right: 10px;
 }
 
 /* 올리브영 */
+.content_slide.kakao .reason .rea {
+  height: 180px;
+}
 .content_slide.oliveyoung .reason .rea {
   height: 180px;
 }
