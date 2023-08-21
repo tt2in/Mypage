@@ -7,7 +7,7 @@
 .menu {
   position: fixed;
   top: 50%;
-  left: 200px;
+  left: 100px;
   transform: translateY(-50%);
 }
 .menu ul li {
@@ -29,10 +29,10 @@
   background-image: url(../images/red.png);
 }
 .menu ul li:nth-child(2) {
-  background-image: url(../images/blue.png);
+  background-image: url(../images/yellow.png);
 }
 .menu ul li:last-child {
-  background-image: url(../images/yellow.png);
+  background-image: url(../images/blue.png);
 }
 .menu ul li a {
   font-family: "Gowun Dodum", sans-serif;
